@@ -94,10 +94,9 @@ st.subheader("3. Welche Abschnitte soll die Mail enthalten?")
 # ── Mail sections as HTML snippets (anonymized: "Orange Hive" → "Beispiel Kunde") ──
 
 sections = {
-    "Header (Logo + Wochenübersicht)": """
+    "Header (Wochenübersicht)": """
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #1F3A47; border-radius: 16px;">
 <tr><td style="padding: 35px 30px; text-align: center;">
-<div style="margin-bottom: 20px;"><img src="https://res.cloudinary.com/helpkit/image/upload/v1688731978/poool_logo_dark_ff5c6f1fe4.png" alt="Poool" width="120" height="auto" style="max-width: 120px; height: auto;"></div>
 <div style="color: #ffffff; font-size: 22px; font-weight: 300; margin-bottom: 6px;">Deine Woche im Überblick</div>
 <div style="color: #ffffff; font-size: 26px; font-weight: 700; margin-bottom: 8px;">16.02. – 20.02.2026</div>
 <div style="color: #9ca3af; font-size: 13px;">Datenstand: 24.02.2026 03:01</div>
@@ -245,43 +244,26 @@ sections = {
 </table></td></tr></table>
 """,
 
-    "Motivations-Footer": """
+    "Automatische E-Mail Hinweis": """
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #1F3A47; border-radius: 16px;">
-<tr><td style="padding: 30px; text-align: center;">
-<div style="color: #ffffff; font-size: 18px; font-weight: 700; margin-bottom: 8px;">Schön, dass du da bist und dich einbringst 💛</div>
-<div style="color: #ffffff; font-size: 14px; opacity: 0.9;">Mit einer zeitnahen Zeiterfassung sorgen wir gemeinsam dafür, dass unsere Projekte rund laufen 🤝</div>
+<tr><td style="padding: 20px 25px; text-align: center;">
+<div style="color: #ffffff; font-size: 13px; opacity: 0.9;">Dies ist eine automatische E-Mail von Poool. Bei Fragen wende dich bitte an support@poool.cc</div>
 </td></tr></table>
 """,
 
-    "Firmen-Footer (Kontakt & Social)": """
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #ffffff; border-radius: 16px; border: 1px solid #e5e7eb;">
-<tr><td style="padding: 25px 30px; text-align: center;">
-<div style="margin-bottom: 15px;">
-<a href="https://www.instagram.com/poool_software/" style="display: inline-block; margin: 0 6px;"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="28" height="28" style="display: block; border-radius: 50%;"></a>
-<a href="https://www.linkedin.com/company/poool-software-consulting/" style="display: inline-block; margin: 0 6px;"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="28" height="28" style="display: block;"></a></div>
-<div style="color: #333333; font-size: 13px; line-height: 1.8;">
-<strong>Poool Software &amp; Consulting GmbH</strong><br>
-<a href="tel:+43(0)512931807" style="color: #4C89FF; text-decoration: none;">+43 (0)512 93 18 07</a> |
-<a href="mailto:support@poool.cc" style="color: #4C89FF; text-decoration: none;">support@poool.cc</a> |
-<a href="https://www.poool.cc" style="color: #4C89FF; text-decoration: none;">www.poool.cc</a><br>
-Grabenweg 3, 6020 Innsbruck, Oesterreich</div>
-<div style="color: #94a3b8; font-size: 10px; margin-top: 10px;">Firmenbuchnummer: FN 409872 d, UID: ATU 68457626 | Gerichtsstand: Innsbruck, DVR-Nr: 4012713 | Geschaeftsfuehrung: Clemens Plank, Thomas Wurzer</div>
-</td></tr></table>
-""",
 }
 
 # ── Heights per section (enough space without scrolling) ──
 
 section_heights = {
-    "Header (Logo + Wochenübersicht)": 260,
+    "Header (Wochenübersicht)": 200,
     "Fortschrittsanzeige (83% Complete)": 360,
     "Zeiterfassung Übersicht (SOLL/IST)": 600,
     "Wochentage-Status (Mo–Fr)": 140,
     "Tagesdetails (Projektzeiterfassung)": 890,
     "Nachbuchungen erforderlich (Warnung)": 320,
     "Projektübersicht (Tabelle)": 260,
-    "Motivations-Footer": 170,
-    "Firmen-Footer (Kontakt & Social)": 270,
+    "Automatische E-Mail Hinweis": 120,
 }
 
 # ── Render each section with checkbox ──
