@@ -67,32 +67,6 @@ if not mail_optionen:
     
     st.stop()
 
-# ── Kosten-Info ──
-
-st.divider()
-st.subheader("2. Kosten & Versand")
-
-col_info1, col_info2 = st.columns(2)
-
-with col_info1:
-    st.markdown("""
-    <div style="background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 20px;">
-        <div style="font-size: 14px; font-weight: 600; color: #166534; margin-bottom: 8px;">💰 Kosten</div>
-        <div style="font-size: 24px; font-weight: 700; color: #1a1a1a;">€ 285</div>
-        <div style="font-size: 13px; color: #666;">Einmaliges Setup</div>
-    </div>
-    """, unsafe_allow_html=True)
-
-with col_info2:
-    st.markdown("""
-    <div style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 20px;">
-        <div style="font-size: 14px; font-weight: 600; color: #1e40af; margin-bottom: 8px;">📅 Versand</div>
-        <div style="font-size: 18px; font-weight: 700; color: #1a1a1a;">Immer Montags</div>
-        <div style="font-size: 13px; color: #666;">Abweichung nur bei PRISM Kunden möglich</div>
-    </div>
-    """, unsafe_allow_html=True)
-
-st.write("")
 
 # ── E-Mail Adresse für Beispiele ──
 
@@ -469,6 +443,33 @@ if "Projektmanagement-Mail" in mail_optionen:
 # ── Generate final HTML & send to Poool ──
 
 st.divider()
+
+# ── Kosten-Info ──
+st.subheader("4. Kosten & Versand")
+
+col_info1, col_info2 = st.columns(2)
+
+with col_info1:
+    st.markdown("""
+    <div style="background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 20px;">
+        <div style="font-size: 14px; font-weight: 600; color: #166534; margin-bottom: 8px;">💰 Kosten</div>
+        <div style="font-size: 24px; font-weight: 700; color: #1a1a1a;">€ 285</div>
+        <div style="font-size: 13px; color: #666;">Einmaliges Setup je Mail-Typ</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col_info2:
+    st.markdown("""
+    <div style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 20px;">
+        <div style="font-size: 14px; font-weight: 600; color: #1e40af; margin-bottom: 8px;">📅 Versand</div>
+        <div style="font-size: 18px; font-weight: 700; color: #1a1a1a;">Immer Montags</div>
+        <div style="font-size: 13px; color: #666;">Abweichung nur bei PRISM Kunden möglich</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+st.write("")
+
+st.divider()
 st.subheader("5. Anmerkungen")
 freitext = st.text_area("Hast du noch Wünsche oder Anmerkungen?", height=120, placeholder="z.B. anderer Versandtag, zusätzliche Inhalte, spezielle Anpassungen ...")
 
@@ -527,7 +528,7 @@ if st.button("✅ Ausgewählte Abschnitte zusammenbauen & an Poool senden", type
             "beispiel_email": beispiel_email if beispiel_email else "",
             "zeiterfassungsmail_aktiv": "Zeiterfassungsmail" in mail_optionen,
             "pm_mail_aktiv": "Projektmanagement-Mail" in mail_optionen,
-            "kosten": "€ 285 einmaliges Setup (pro Mail-Typ)",
+            "kosten": "€ 285 einmaliges Setup je Mail-Typ",
             "versand": "Immer Montags (Abweichung nur bei PRISM Kunden möglich)",
             "mail_typen": mail_optionen,
             "zeiterfassung_abschnitte": auswahl_zeiterfassung if "Zeiterfassungsmail" in mail_optionen else {},
