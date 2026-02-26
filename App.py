@@ -27,12 +27,20 @@ st.divider()
 
 st.subheader("1. Welche E-Mails möchtest du aktivieren?")
 
-mail_optionen = st.multiselect(
-    "E-Mail Typen auswählen:",
-    options=["Zeiterfassungsmail", "Projektmanagement-Mail"],
-    default=["Zeiterfassungsmail"],
-    help="Du kannst eine oder beide Mail-Arten aktivieren"
-)
+col1, col2 = st.columns(2)
+
+with col1:
+    zeiterfassung_aktiv = st.checkbox("✅ Zeiterfassungsmail", value=True)
+
+with col2:
+    pm_aktiv = st.checkbox("✅ Projektmanagement-Mail", value=False)
+
+# Mail-Optionen für Kompatibilität
+mail_optionen = []
+if zeiterfassung_aktiv:
+    mail_optionen.append("Zeiterfassungsmail")
+if pm_aktiv:
+    mail_optionen.append("Projektmanagement-Mail")
 
 if not mail_optionen:
     st.info("Keine Mail-Art ausgewählt. Es werden keine wöchentlichen Mails versendet.")
