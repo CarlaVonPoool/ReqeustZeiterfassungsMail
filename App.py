@@ -110,7 +110,7 @@ sections = {
 <div style="color: #94a3b8; font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 20px;">COMPLETE</div>
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="80%" align="center" style="height: 14px; border-radius: 7px; overflow: hidden; margin-bottom: 20px;">
 <tr><td width="100%" style="background-color: #34A853; height: 14px;"></td></tr></table>
-<div style="color: #1a1a1a; font-size: 22px; font-weight: 700; margin-bottom: 8px;">Perfekt, Carla!</div>
+<div style="color: #1a1a1a; font-size: 22px; font-weight: 700; margin-bottom: 8px;">Perfekt, {{Vorname}}!</div>
 <div style="color: #666666; font-size: 15px; margin-bottom: 25px;">Alle Stunden sind vollstaendig gebucht.</div>
 </td></tr></table>
 """,
