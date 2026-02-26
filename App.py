@@ -219,13 +219,13 @@ sections = {
 <tr><td style="background-color: #1F3A47; color: #ffffff; font-size: 13px; font-weight: 700; padding: 12px 16px; width: 45%;">Projekt:</td>
 <td style="background-color: #1F3A47; color: #ffffff; font-size: 13px; font-weight: 700; padding: 12px 16px; text-align: center; width: 30%;">Kategorie</td>
 <td style="background-color: #1F3A47; color: #ffffff; font-size: 13px; font-weight: 700; padding: 12px 16px; text-align: right; width: 25%;">Stunden</td></tr>
-<tr><td style="color: #333333; font-size: 13px; padding: 12px 16px; border-bottom: 1px solid #f3f4f6;">Orange Hive GmbH – Basislizenz: Altvertrag (Pro)</td>
+<tr><td style="color: #333333; font-size: 13px; padding: 12px 16px; border-bottom: 1px solid #f3f4f6;">Beispiel Kunde GmbH – Basislizenz: Altvertrag (Pro)</td>
 <td style="padding: 12px 16px; border-bottom: 1px solid #f3f4f6; text-align: center;"><span style="display: inline-block; background-color: #d1fae5; color: #065f46; font-size: 11px; font-weight: 700; padding: 4px 14px; border-radius: 12px;">Operativ</span></td>
 <td style="color: #1a1a1a; font-size: 13px; font-weight: 600; padding: 12px 16px; text-align: right; border-bottom: 1px solid #f3f4f6;">14:00 h</td></tr>
-<tr><td style="color: #333333; font-size: 13px; padding: 12px 16px; border-bottom: 1px solid #f3f4f6;">Poool Software &amp; Consulting – Förderprojekt AI</td>
+<tr><td style="color: #333333; font-size: 13px; padding: 12px 16px; border-bottom: 1px solid #f3f4f6;">Muster Software &amp; Consulting – Förderprojekt AI</td>
 <td style="padding: 12px 16px; border-bottom: 1px solid #f3f4f6; text-align: center;"><span style="display: inline-block; background-color: #d1fae5; color: #065f46; font-size: 11px; font-weight: 700; padding: 4px 14px; border-radius: 12px;">Operativ</span></td>
 <td style="color: #1a1a1a; font-size: 13px; font-weight: 600; padding: 12px 16px; text-align: right; border-bottom: 1px solid #f3f4f6;">05:00 h</td></tr>
-<tr><td style="color: #333333; font-size: 13px; padding: 12px 16px; border-bottom: 1px solid #f3f4f6;">Poool – Internes Projekt</td>
+<tr><td style="color: #333333; font-size: 13px; padding: 12px 16px; border-bottom: 1px solid #f3f4f6;">Beispiel Firma – Internes Projekt</td>
 <td style="padding: 12px 16px; border-bottom: 1px solid #f3f4f6; text-align: center;"><span style="display: inline-block; background-color: #dbeafe; color: #1e40af; font-size: 11px; font-weight: 700; padding: 4px 14px; border-radius: 12px;">Intern</span></td>
 <td style="color: #1a1a1a; font-size: 13px; font-weight: 600; padding: 12px 16px; text-align: right; border-bottom: 1px solid #f3f4f6;">13:00 h</td></tr>
 </table></td></tr></table>
