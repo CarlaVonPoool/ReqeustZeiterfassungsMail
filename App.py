@@ -454,7 +454,7 @@ with col_info1:
     <div style="background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 20px;">
         <div style="font-size: 14px; font-weight: 600; color: #166534; margin-bottom: 8px;">💰 Kosten</div>
         <div style="font-size: 24px; font-weight: 700; color: #1a1a1a;">€ 285</div>
-        <div style="font-size: 13px; color: #666;">Einmaliges Setup je Mail-Typ</div>
+        <div style="font-size: 13px; color: #666;">Einmaliges Setup (pro Mail-Typ)</div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -528,7 +528,7 @@ if st.button("✅ Ausgewählte Abschnitte zusammenbauen & an Poool senden", type
             "beispiel_email": beispiel_email if beispiel_email else "",
             "zeiterfassungsmail_aktiv": "Zeiterfassungsmail" in mail_optionen,
             "pm_mail_aktiv": "Projektmanagement-Mail" in mail_optionen,
-            "kosten": "€ 285 einmaliges Setup je Mail-Typ",
+            "kosten": "€ 285 einmaliges Setup (pro Mail-Typ)",
             "versand": "Immer Montags (Abweichung nur bei PRISM Kunden möglich)",
             "mail_typen": mail_optionen,
             "zeiterfassung_abschnitte": auswahl_zeiterfassung if "Zeiterfassungsmail" in mail_optionen else {},
