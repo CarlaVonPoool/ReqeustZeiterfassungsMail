@@ -730,24 +730,24 @@ pm_sections = {
 # ── Heights per section (enough space without scrolling) ──
 
 zeiterfassung_heights = {
-    "Header (Wochenübersicht)": 200,
-    "Fortschrittsanzeige (100% Complete)": 320,
-    "Zeiterfassung Übersicht (SOLL/IST)": 520,
-    "Wochentage-Status (Mo–Fr)": 140,
-    "Tagesdetails (Projektzeiterfassung)": 890,
-    "Nachbuchungen erforderlich (Warnung)": 400,
-    "Projektübersicht (Tabelle)": 400,
-    "Automatische E-Mail Hinweis": 140,
+    "Header (Wochenübersicht)": 180,
+    "Fortschrittsanzeige (100% Complete)": 280,
+    "Zeiterfassung Übersicht (SOLL/IST)": 450,
+    "Wochentage-Status (Mo–Fr)": 120,
+    "Tagesdetails (Projektzeiterfassung)": 750,
+    "Nachbuchungen erforderlich (Warnung)": 350,
+    "Projektübersicht (Tabelle)": 350,
+    "Automatische E-Mail Hinweis": 120,
 }
 
 pm_heights = {
-    "PM Header (Projekt-Übersicht)": 220,
-    "Handlungsbedarf (Kritische Projekte)": 320,
-    "Kennzahlen Übersicht": 400,
-    "Projekt Details": 1000,
-    "Ticket-Stundenuebersicht": 1600,
-    "Legende": 140,
-    "PM Automatische E-Mail Hinweis": 140,
+    "PM Header (Projekt-Übersicht)": 200,
+    "Handlungsbedarf (Kritische Projekte)": 280,
+    "Kennzahlen Übersicht": 350,
+    "Projekt Details": 850,
+    "Ticket-Stundenuebersicht": 1300,
+    "Legende": 120,
+    "PM Automatische E-Mail Hinweis": 120,
 }
 
 # ── Render sections for each selected mail type ──
@@ -756,8 +756,8 @@ auswahl_zeiterfassung = {}
 auswahl_pm = {}
 
 # Zeiterfassungsmail Sektionen
-st.divider()
-st.subheader("Zeiterfassungs-Mail - Abschnitte auswählen")
+st.markdown("### Zeiterfassungs-Mail - Abschnitte auswählen")
+st.markdown("---")
 
 for titel, html_content in zeiterfassung_sections.items():
     # E-Mail Platzhalter ersetzen für Vorschau
@@ -781,8 +781,8 @@ for titel, html_content in zeiterfassung_sections.items():
         auswahl_zeiterfassung[titel] = st.checkbox("Einschließen", value=True, key=f"zeit_{titel}")
 
 # PM-Mail Sektionen  
-st.divider()
-st.subheader("Projektmanagement-Mail - Abschnitte auswählen (demnächst verfügbar)")
+st.markdown("### Projektmanagement-Mail - Abschnitte auswählen")
+st.markdown("---")
 
 for titel, html_content in pm_sections.items():
     # E-Mail Platzhalter ersetzen für Vorschau
@@ -807,7 +807,7 @@ for titel, html_content in pm_sections.items():
 
 # ── Generate final HTML & send to Poool ──
 
-st.divider()
+st.markdown("---")
 
 # ── Kosten-Info ──
 st.subheader("Kosten & Versand")
