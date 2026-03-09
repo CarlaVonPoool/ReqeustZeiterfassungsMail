@@ -38,7 +38,30 @@ st.divider()
 st.subheader("Welche E-Mails möchtest du aktivieren?")
 
 zeiterfassung_aktiv = st.checkbox("Zeiterfassungs-Mail", value=True)
-pm_aktiv = st.checkbox("Projektmanagement-Mail (demnächst verfügbar)", value=False)
+pm_aktiv = st.checkbox("Projektmanagement-Mail", value=False)
+
+# PM-Mail Konfiguration
+if pm_aktiv:
+    st.markdown("**Projektmanagement-Mail Konfiguration:**")
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        stundenkosten_option = st.selectbox(
+            "Stundenkosten",
+            ["Fremdkostenansatz", "Interner Kostenansatz"],
+            index=0
+        )
+    
+    with col2:
+        rohertrag_option = st.selectbox(
+            "Rohertragsberechnung",
+            ["Abgerechnet", "Auftrag + Ausgangsrechnung"],
+            index=0
+        )
+else:
+    stundenkosten_option = "Fremdkostenansatz"
+    rohertrag_option = "Abgerechnet"
 
 # Mail-Optionen für Kompatibilität
 mail_optionen = []
@@ -273,7 +296,7 @@ pm_sections = {
       <td width="50%" style="vertical-align: top; padding-right: 10px;">
         <div style="color: #9ca3af; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">PROJEKTE</div>
         <div style="margin-bottom: 6px;"><span style="color: #991b1b; font-size: 13px;">🔴 1 Projekt kritisch</span></div>
-        <div style="margin-bottom: 6px;"><span style="color: #92400e; font-size: 13px;">🟡 2 Projekte im Blick behalten</span></div>
+        <div style="margin-bottom: 6px;"><span style="color: #92400e; font-size: 13px;">🟡 1 Projekt im Blick behalten</span></div>
       </td>
       <td width="50%" style="vertical-align: top; padding-left: 10px;">
         <div style="color: #9ca3af; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">TICKETS</div>
@@ -817,7 +840,7 @@ st.divider()
 
 N8N_WEBHOOK_URL = "https://poool.app.n8n.cloud/webhook/7000884e-6635-4d83-a6ea-6c242857c004"
 
-if st.button("✅ Ausgewählte Abschnitte zusammenbauen & an Poool senden", type="primary"):
+if st.button("💰 kostenpflichtig bestellen", type="primary"):
     # Sammle alle gewählten Abschnitte
     alle_html_teile = []
     gesamt_info = []
@@ -868,6 +891,8 @@ if st.button("✅ Ausgewählte Abschnitte zusammenbauen & an Poool senden", type
             "beispiel_email": beispiel_email if beispiel_email else "",
             "zeiterfassungsmail_aktiv": "Zeiterfassungs-Mail" in mail_optionen,
             "pm_mail_aktiv": "Projektmanagement-Mail" in mail_optionen,
+            "pm_stundenkosten_option": stundenkosten_option if pm_aktiv else None,
+            "pm_rohertrag_option": rohertrag_option if pm_aktiv else None,
             "kosten": "€ 285 einmaliges Setup (pro Mail-Typ)",
             "versand": "Immer Montags (Abweichung nur bei PRISM Kunden möglich)",
             "mail_typen": mail_optionen,
