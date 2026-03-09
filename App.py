@@ -840,7 +840,7 @@ st.divider()
 
 N8N_WEBHOOK_URL = "https://poool.app.n8n.cloud/webhook/7000884e-6635-4d83-a6ea-6c242857c004"
 
-if st.button("💰 kostenpflichtig bestellen", type="primary"):
+if st.button("kostenpflichtig bestellen", type="primary"):
     # Sammle alle gewählten Abschnitte
     alle_html_teile = []
     gesamt_info = []
@@ -855,7 +855,7 @@ if st.button("💰 kostenpflichtig bestellen", type="primary"):
             # Build Zeiterfassung HTML
             for titel in zeit_gewaehlte:
                 content = zeiterfassung_sections[titel].replace("{{Vorname}}", "{{Vorname}}")  # Keep placeholder
-                alle_html_teile.append(f'<tr><td style="padding: 0 0 16px 0;">{content}</td></tr>')
+                alle_html_teile.append(f'<tr><td style="padding: 0 0 8px 0;">{content}</td></tr>')
     
     if "Projektmanagement-Mail" in mail_optionen:
         pm_gewaehlte = [titel for titel, aktiv in auswahl_pm.items() if aktiv]
@@ -867,7 +867,7 @@ if st.button("💰 kostenpflichtig bestellen", type="primary"):
             # Build PM HTML mit 640px breite (wie im Original)
             for titel in pm_gewaehlte:
                 content = pm_sections[titel].replace("{{Vorname}}", "{{Vorname}}")  # Keep placeholder
-                alle_html_teile.append(f'<tr><td style="padding: 0 0 16px 0;">{content}</td></tr>')
+                alle_html_teile.append(f'<tr><td style="padding: 0 0 8px 0;">{content}</td></tr>')
     
     if alle_html_teile:
         st.success(f"**Ausgewählt:** {' | '.join(gesamt_info)}")
