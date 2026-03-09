@@ -837,10 +837,32 @@ st.subheader("Anmerkungen")
 freitext = st.text_area("Hast du noch Wünsche oder Anmerkungen?", height=120, placeholder="z.B. anderer Versandtag, zusätzliche Inhalte, spezielle Anpassungen ...")
 
 st.divider()
+st.subheader("Bestellung")
+
+# Rechtliche Hinweise
+st.markdown("""
+<div style="background-color: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+    <h4 style="color: #495057; margin-bottom: 15px;">📋 Rechtliche Hinweise</h4>
+    <p style="font-size: 14px; color: #6c757d; margin-bottom: 10px;">Für diese Add-on Bestellung gelten die gleichen Vertragsbedingungen wie in Ihrem bestehenden Poool-Vertrag.</p>
+    <p style="font-size: 14px; color: #6c757d; margin-bottom: 10px;">Detaillierte Leistungsbeschreibung und Liefertermin werden per E-Mail besprochen.</p>
+    <p style="font-size: 14px; color: #6c757d; margin-bottom: 0px;"><strong>Bei Fragen:</strong> <a href="mailto:carla.schaekel@poool.cc" style="color: #007bff;">carla.schaekel@poool.cc</a></p>
+</div>
+""", unsafe_allow_html=True)
+
+# Bestellbestätigung
+bestellung_bestaetigung = st.checkbox(
+    "Hiermit bestelle ich verbindlich das ausgewählte E-Mail Add-on für mein Unternehmen zum angegebenen Preis.",
+    value=False
+)
+
+st.divider()
 
 N8N_WEBHOOK_URL = "https://poool.app.n8n.cloud/webhook/7000884e-6635-4d83-a6ea-6c242857c004"
 
-if st.button("kostenpflichtig bestellen", type="primary"):
+if not bestellung_bestaetigung:
+    st.warning("⚠️ Bitte bestätigen Sie die Bestellung, um fortzufahren.")
+
+if st.button("kostenpflichtig bestellen", type="primary", disabled=not bestellung_bestaetigung):
     # Sammle alle gewählten Abschnitte
     alle_html_teile = []
     gesamt_info = []
@@ -885,8 +907,11 @@ if st.button("kostenpflichtig bestellen", type="primary"):
 """
         
         # ── Send to Poool ──
+        bestelldatum = datetime.now().strftime("%d.%m.%Y %H:%M")
         payload = {
             "timestamp": datetime.now().isoformat(),
+            "bestelldatum": bestelldatum,
+            "bestellung_bestaetigt": True,
             "unternehmen": unternehmen if unternehmen else "",
             "beispiel_email": beispiel_email if beispiel_email else "",
             "zeiterfassungsmail_aktiv": "Zeiterfassungs-Mail" in mail_optionen,
@@ -898,7 +923,7 @@ if st.button("kostenpflichtig bestellen", type="primary"):
             "mail_typen": mail_optionen,
             "zeiterfassung_abschnitte": auswahl_zeiterfassung if "Zeiterfassungs-Mail" in mail_optionen else {},
             "pm_abschnitte": auswahl_pm if "Projektmanagement-Mail" in mail_optionen else {},
-            "beschreibung": f"Mail-Typen aktiv: {', '.join(mail_optionen)}. {' | '.join(gesamt_info)}",
+            "beschreibung": f"BESTELLUNG: {unternehmen} - Mail-Typen: {', '.join(mail_optionen)}. {' | '.join(gesamt_info)} - Bestellt am {bestelldatum}",
             "finale_email_html": final_html,
             "anmerkungen": freitext if freitext else "",
         }
@@ -906,11 +931,15 @@ if st.button("kostenpflichtig bestellen", type="primary"):
         try:
             response = requests.post(N8N_WEBHOOK_URL, json=payload, timeout=10)
             if response.ok:
-                st.success("📤 Auswahl erfolgreich an Poool gesendet!")
+                st.success("🎉 **Bestellung erfolgreich eingegangen!**")
+                st.info(f"📋 **Bestelldatum:** {bestelldatum}")
+                st.info(f"🏢 **Unternehmen:** {unternehmen}")
+                st.info(f"📧 **Weitere Informationen:** carla.schaekel@poool.cc wird sich zeitnah mit Ihnen in Verbindung setzen.")
+                st.balloons()
             else:
-                st.error(f"Fehler: Status {response.status_code} – {response.text}")
+                st.error(f"Fehler bei der Bestellübertragung: Status {response.status_code} – {response.text}")
         except requests.exceptions.RequestException as e:
-            st.error(f"Verbindungsfehler zu Poool: {e}")
+            st.error(f"Verbindungsfehler: {e} - Bitte versuchen Sie es erneut oder kontaktieren Sie carla.schaekel@poool.cc")
         
         # ── Preview ──
         st.markdown("### Vorschau der finalen E-Mail:")
