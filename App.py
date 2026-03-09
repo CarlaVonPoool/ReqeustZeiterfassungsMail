@@ -273,7 +273,7 @@ pm_sections = {
     </tr>
     <tr>
       <td width="50%" style="padding:4px 8px 4px 0;font-size:13px;color:#991b1b;">🟡 1 Projekt im Blick behalten</td>
-      <td width="50%" style="padding:4px 0 4px 8px;font-size:13px;color:#991b1b;">🎫 3 überfällige Tickets</td>
+      <td width="50%" style="padding:4px 0 4px 8px;font-size:13px;color:#991b1b;"></td>
     </tr>
     <tr>
       <td width="50%" style="padding:4px 8px 4px 0;font-size:13px;color:#991b1b;font-weight:700;">🔴 4 Tickets kritisch (≥90%)</td>
@@ -583,7 +583,9 @@ pm_sections = {
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
         <tr>
           <td style="vertical-align:top;width:55%;"><div style="font-size:13px;font-weight:700;color:#000000;">Februar 2026</div><div style="font-size:10px;color:#666666;margin-top:2px;">03279 &middot; Status: open</div></td>
-          <td style="vertical-align:top;text-align:right;width:45%;"><div style="font-size:15px;font-weight:700;color:#991b1b;">139.2 / 120.0 h</div><div style="font-size:11px;color:#991b1b;font-weight:600;">116%</div></td>
+          <td style="vertical-align:top;text-align:right;width:45%;"><div style="font-size:15px;font-weight:700;color:#991b1b;">139.2 / 120.0 h</div><div style="font-size:11px;color:#991b1b;font-weight:600;">116%</div>
+          <div style="margin-top:4px;padding:2px 6px;background:#fee2e2;border-radius:6px;"><span style="color:#991b1b;font-size:9px;font-weight:700;">🚨 4d überfällig</span></div>
+          <div style="color:#666666;font-size:9px;margin-top:2px;">DL: 27.02.2026</div></td>
         </tr>
       </table>
       <div style="margin-top:8px;">
@@ -628,7 +630,9 @@ pm_sections = {
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
         <tr>
           <td style="vertical-align:top;width:55%;"><div style="font-size:13px;font-weight:700;color:#000000;">PM</div><div style="font-size:10px;color:#666666;margin-top:2px;">02925 &middot; Status: open</div></td>
-          <td style="vertical-align:top;text-align:right;width:45%;"><div style="font-size:15px;font-weight:700;color:#991b1b;">50.3 / 10.0 h</div><div style="font-size:11px;color:#991b1b;font-weight:600;">503%</div></td>
+          <td style="vertical-align:top;text-align:right;width:45%;"><div style="font-size:15px;font-weight:700;color:#991b1b;">50.3 / 10.0 h</div><div style="font-size:11px;color:#991b1b;font-weight:600;">503%</div>
+          <div style="margin-top:4px;padding:2px 6px;background:#fee2e2;border-radius:6px;"><span style="color:#991b1b;font-size:9px;font-weight:700;">🚨 62d überfällig</span></div>
+          <div style="color:#666666;font-size:9px;margin-top:2px;">DL: 31.12.2025</div></td>
         </tr>
       </table>
       <div style="margin-top:8px;">
@@ -647,7 +651,9 @@ pm_sections = {
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
         <tr>
           <td style="vertical-align:top;width:55%;"><div style="font-size:13px;font-weight:700;color:#000000;">Design One Pager</div><div style="font-size:10px;color:#666666;margin-top:2px;">02954 &middot; Status: open</div></td>
-          <td style="vertical-align:top;text-align:right;width:45%;"><div style="font-size:15px;font-weight:700;color:#991b1b;">157.8 / 28.0 h</div><div style="font-size:11px;color:#991b1b;font-weight:600;">563%</div></td>
+          <td style="vertical-align:top;text-align:right;width:45%;"><div style="font-size:15px;font-weight:700;color:#991b1b;">157.8 / 28.0 h</div><div style="font-size:11px;color:#991b1b;font-weight:600;">563%</div>
+          <div style="margin-top:4px;padding:2px 6px;background:#fee2e2;border-radius:6px;"><span style="color:#991b1b;font-size:9px;font-weight:700;">🚨 31d überfällig</span></div>
+          <div style="color:#666666;font-size:9px;margin-top:2px;">DL: 31.01.2026</div></td>
         </tr>
       </table>
       <div style="margin-top:8px;">
@@ -666,78 +672,6 @@ pm_sections = {
 </table>
 """,
 
-    "Ueberfaellige Tickets": """
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #ffffff; border-radius: 16px; border: 1px solid #e5e7eb;">
-<tr><td style="padding: 30px;">
-  <div style="color: #000000; font-size: 20px; font-weight: 700; margin-bottom: 6px;">Überfällige Tickets</div>
-  <div style="color: #666666; font-size: 12px; margin-bottom: 20px;">Offene Tickets mit überschrittener Deadline</div>
-
-  <div style="margin-bottom:16px;padding:14px 18px;background:#fee2e2;border-radius:12px;border:1px solid #e5e7eb;">
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-      <tr>
-        <td><span style="font-size:13px;color:#991b1b;font-weight:700;">Übersicht</span></td>
-        <td align="right"><span style="font-size:13px;font-weight:700;color:#991b1b;">🚨 3 überfällige Tickets</span></td>
-      </tr>
-    </table>
-  </div>
-
-  <div style="margin-bottom:8px;padding:12px 14px;background:#fafafa;border-radius:12px;border:1px solid #e5e7eb;">
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-      <tr><td style="vertical-align:top;">
-        <div style="font-size:13px;font-weight:700;color:#000000;">PM</div>
-        <div style="font-size:10px;color:#666666;margin-top:2px;">02925 · Logo Update & Website One Pager · Kunde Gamma GmbH</div>
-      </td></tr>
-    </table>
-    <div style="margin-top:8px;padding-top:8px;border-top:1px solid #e5e7eb;">
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="font-size:10px;color:#333333">
-        <tr>
-          <td>👤 Mitarbeiter M.</td>
-          <td>Status: <strong>open</strong></td>
-          <td align="right"><span style="color:#991b1b;font-weight:700;">🚨 62d überfällig</span><span style="color:#666666;margin-left:6px;">DL: 31.12.2025</span></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div style="margin-bottom:8px;padding:12px 14px;background:#fafafa;border-radius:12px;border:1px solid #e5e7eb;">
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-      <tr><td style="vertical-align:top;">
-        <div style="font-size:13px;font-weight:700;color:#000000;">Januar 2026</div>
-        <div style="font-size:10px;color:#666666;margin-top:2px;">03229 · Marketing- und Design-Support 2026 · Kunde Beta e.V.</div>
-      </td></tr>
-    </table>
-    <div style="margin-top:8px;padding-top:8px;border-top:1px solid #e5e7eb;">
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="font-size:10px;color:#333333">
-        <tr>
-          <td>👤 Mitarbeiter M.</td>
-          <td>Status: <strong>open</strong></td>
-          <td align="right"><span style="color:#991b1b;font-weight:700;">🚨 31d überfällig</span><span style="color:#666666;margin-left:6px;">DL: 31.01.2026</span></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div style="margin-bottom:8px;padding:12px 14px;background:#fafafa;border-radius:12px;border:1px solid #e5e7eb;">
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-      <tr><td style="vertical-align:top;">
-        <div style="font-size:13px;font-weight:700;color:#000000;">Februar 2026</div>
-        <div style="font-size:10px;color:#666666;margin-top:2px;">03279 · Marketing 2026 · Kunde Alpha GmbH</div>
-      </td></tr>
-    </table>
-    <div style="margin-top:8px;padding-top:8px;border-top:1px solid #e5e7eb;">
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="font-size:10px;color:#333333">
-        <tr>
-          <td>👤 Mitarbeiter M.</td>
-          <td>Status: <strong>open</strong></td>
-          <td align="right"><span style="color:#991b1b;font-weight:700;">🚨 4d überfällig</span><span style="color:#666666;margin-left:6px;">DL: 27.02.2026</span></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-</td></tr>
-</table>
-""",
 
     "Legende": """
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #ffffff; border-radius: 16px; border: 1px solid #e5e7eb;">
@@ -775,7 +709,6 @@ pm_heights = {
     "Kennzahlen Übersicht": 400,
     "Projekt Details": 1000,
     "Ticket-Stundenuebersicht": 1600,
-    "Ueberfaellige Tickets": 550,
     "Legende": 140,
     "PM Automatische E-Mail Hinweis": 140,
 }
