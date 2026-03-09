@@ -583,14 +583,12 @@ pm_sections = {
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
         <tr>
           <td style="vertical-align:top;width:55%;"><div style="font-size:13px;font-weight:700;color:#000000;">Februar 2026</div><div style="font-size:10px;color:#666666;margin-top:2px;">03279 &middot; Status: open</div></td>
-          <td style="vertical-align:top;text-align:right;width:45%;"><div style="font-size:15px;font-weight:700;color:#991b1b;">139.2 / 120.0 h</div><div style="font-size:11px;color:#991b1b;font-weight:600;">116%</div>
-          <div style="margin-top:4px;padding:2px 6px;background:#fee2e2;border-radius:6px;"><span style="color:#991b1b;font-size:9px;font-weight:700;">🚨 4d überfällig</span></div>
-          <div style="color:#666666;font-size:9px;margin-top:2px;">DL: 27.02.2026</div></td>
+          <td style="vertical-align:top;text-align:right;width:45%;"><div style="font-size:15px;font-weight:700;color:#991b1b;">139.2 / 120.0 h</div><div style="font-size:11px;color:#991b1b;font-weight:600;">116%</div></td>
         </tr>
       </table>
       <div style="margin-top:8px;">
         <div style="background:#f3f4f6;border-radius:7px;height:12px;width:100%;position:relative;"><div style="background:#ef4444;border-radius:7px;height:12px;width:100%;min-width:2px;"></div></div>
-        <span style="color:#991b1b;font-size:10px;font-weight:700;margin-left:6px;">⚠️ 19.2 h ueber Plan!</span>
+        <span style="color:#991b1b;font-size:10px;font-weight:700;margin-left:6px;">⚠️ 19.2 h ueber Plan!</span> • <span style="color:#991b1b;font-size:10px;font-weight:700;">🚨 4d überfällig</span> • <span style="color:#666666;font-size:10px;">DL: 27.02.2026</span>
       </div>
       <div style="margin-top:10px;padding-top:10px;border-top:1px solid #e5e7eb;">
         <div style="margin-bottom:8px;padding:8px 10px;background:#ffffff;border-radius:8px;border:1px solid #e5e7eb;">
@@ -630,14 +628,12 @@ pm_sections = {
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
         <tr>
           <td style="vertical-align:top;width:55%;"><div style="font-size:13px;font-weight:700;color:#000000;">PM</div><div style="font-size:10px;color:#666666;margin-top:2px;">02925 &middot; Status: open</div></td>
-          <td style="vertical-align:top;text-align:right;width:45%;"><div style="font-size:15px;font-weight:700;color:#991b1b;">50.3 / 10.0 h</div><div style="font-size:11px;color:#991b1b;font-weight:600;">503%</div>
-          <div style="margin-top:4px;padding:2px 6px;background:#fee2e2;border-radius:6px;"><span style="color:#991b1b;font-size:9px;font-weight:700;">🚨 62d überfällig</span></div>
-          <div style="color:#666666;font-size:9px;margin-top:2px;">DL: 31.12.2025</div></td>
+          <td style="vertical-align:top;text-align:right;width:45%;"><div style="font-size:15px;font-weight:700;color:#991b1b;">50.3 / 10.0 h</div><div style="font-size:11px;color:#991b1b;font-weight:600;">503%</div></td>
         </tr>
       </table>
       <div style="margin-top:8px;">
         <div style="background:#f3f4f6;border-radius:7px;height:12px;width:100%;position:relative;"><div style="background:#ef4444;border-radius:7px;height:12px;width:100%;min-width:2px;"></div></div>
-        <span style="color:#991b1b;font-size:10px;font-weight:700;margin-left:6px;">⚠️ 40.3 h ueber Plan!</span>
+        <span style="color:#991b1b;font-size:10px;font-weight:700;margin-left:6px;">⚠️ 40.3 h ueber Plan!</span> • <span style="color:#991b1b;font-size:10px;font-weight:700;">🚨 62d überfällig</span> • <span style="color:#666666;font-size:10px;">DL: 31.12.2025</span>
       </div>
       <div style="margin-top:10px;padding-top:10px;border-top:1px solid #e5e7eb;">
         <div style="font-size:11px;color:#333333;padding:3px 0;">👤 Mitarbeiter M.: <strong style="color:#000000;">34.3 h</strong></div>
@@ -651,14 +647,12 @@ pm_sections = {
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
         <tr>
           <td style="vertical-align:top;width:55%;"><div style="font-size:13px;font-weight:700;color:#000000;">Design One Pager</div><div style="font-size:10px;color:#666666;margin-top:2px;">02954 &middot; Status: open</div></td>
-          <td style="vertical-align:top;text-align:right;width:45%;"><div style="font-size:15px;font-weight:700;color:#991b1b;">157.8 / 28.0 h</div><div style="font-size:11px;color:#991b1b;font-weight:600;">563%</div>
-          <div style="margin-top:4px;padding:2px 6px;background:#fee2e2;border-radius:6px;"><span style="color:#991b1b;font-size:9px;font-weight:700;">🚨 31d überfällig</span></div>
-          <div style="color:#666666;font-size:9px;margin-top:2px;">DL: 31.01.2026</div></td>
+          <td style="vertical-align:top;text-align:right;width:45%;"><div style="font-size:15px;font-weight:700;color:#991b1b;">157.8 / 28.0 h</div><div style="font-size:11px;color:#991b1b;font-weight:600;">563%</div></td>
         </tr>
       </table>
       <div style="margin-top:8px;">
         <div style="background:#f3f4f6;border-radius:7px;height:12px;width:100%;position:relative;"><div style="background:#ef4444;border-radius:7px;height:12px;width:100%;min-width:2px;"></div></div>
-        <span style="color:#991b1b;font-size:10px;font-weight:700;margin-left:6px;">⚠️ 129.8 h ueber Plan!</span>
+        <span style="color:#991b1b;font-size:10px;font-weight:700;margin-left:6px;">⚠️ 129.8 h ueber Plan!</span> • <span style="color:#991b1b;font-size:10px;font-weight:700;">🚨 31d überfällig</span> • <span style="color:#666666;font-size:10px;">DL: 31.01.2026</span>
       </div>
       <div style="margin-top:10px;padding-top:10px;border-top:1px solid #e5e7eb;">
         <div style="font-size:11px;color:#333333;padding:3px 0;">👤 Mitarbeiter F.: <strong style="color:#000000;">129.8 h</strong></div>
