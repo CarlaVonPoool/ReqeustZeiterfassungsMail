@@ -672,7 +672,25 @@ pm_sections = {
     "Legende": """
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #ffffff; border-radius: 16px; border: 1px solid #e5e7eb;">
 <tr><td style="padding: 20px 30px;">
-  <div style="font-size:11px;color:#333333;line-height:1.8;">DB II: gruen &gt;30% | gelb 0-30% | rot &lt;0% | grau Kein Umsatz<br>Formel: Umsatz - Fremdkosten = Rohertrag - Stundenkosten = DB II<br>Ticket-Stunden: gruen &lt;70% | gelb 70-89% | rot &gt;=90%<br>* Konfigurierbar: * Umsatz (Abgerechnet + Auftrag) | * Stunden (Selbstkostensatz)</div>
+  <div style="font-size: 13px; color: #333333; line-height: 1.6; margin-bottom: 8px;">
+    <strong>DB II:</strong> 
+    <span style="display: inline-block; width: 12px; height: 12px; background-color: #22c55e; border-radius: 50%; margin: 0 4px; vertical-align: middle;"></span>&gt;30% · 
+    <span style="display: inline-block; width: 12px; height: 12px; background-color: #f59e0b; border-radius: 50%; margin: 0 4px; vertical-align: middle;"></span>0–30% · 
+    <span style="display: inline-block; width: 12px; height: 12px; background-color: #ef4444; border-radius: 50%; margin: 0 4px; vertical-align: middle;"></span>&lt;0% · 
+    <span style="display: inline-block; width: 12px; height: 12px; background-color: #9ca3af; border-radius: 50%; margin: 0 4px; vertical-align: middle;"></span>Kein Umsatz
+  </div>
+  <div style="font-size: 11px; color: #666666; margin-bottom: 12px;">
+    Formel: Umsatz – Fremdkosten = Rohertrag – Stundenkosten = DB II
+  </div>
+  <div style="font-size: 13px; color: #333333; line-height: 1.6; margin-bottom: 8px;">
+    <strong>Ticket-Stunden:</strong> 
+    <span style="display: inline-block; width: 12px; height: 12px; background-color: #22c55e; border-radius: 50%; margin: 0 4px; vertical-align: middle;"></span>&lt;70% · 
+    <span style="display: inline-block; width: 12px; height: 12px; background-color: #f59e0b; border-radius: 50%; margin: 0 4px; vertical-align: middle;"></span>70–89% · 
+    <span style="display: inline-block; width: 12px; height: 12px; background-color: #ef4444; border-radius: 50%; margin: 0 4px; vertical-align: middle;"></span>≥90%
+  </div>
+  <div style="font-size: 11px; color: #666666;">
+    * Konfigurierbar: * Umsatz (Abgerechnet + Auftrag) | * Stunden (Selbstkostensatz)
+  </div>
 </td></tr>
 </table>
 """,
