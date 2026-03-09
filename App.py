@@ -267,23 +267,26 @@ pm_sections = {
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #ffffff; border-radius: 16px; border: 2px solid #ef4444;">
 <tr><td style="padding: 25px 30px;">
   <div style="color: #991b1b; font-size: 17px; font-weight: 700; margin-bottom: 16px;">⚠️ Handlungsbedarf</div>
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+  
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 16px;">
     <tr>
-      <td width="50%" style="padding:4px 8px 4px 0;font-size:13px;color:#991b1b;">🔴 1 kritisches Projekt</td>
-    </tr>
-    <tr>
-      <td width="50%" style="padding:4px 8px 4px 0;font-size:13px;color:#991b1b;">🟡 1 Projekt im Blick behalten</td>
-      <td width="50%" style="padding:4px 0 4px 8px;font-size:13px;color:#991b1b;"></td>
-    </tr>
-    <tr>
-      <td width="50%" style="padding:4px 8px 4px 0;font-size:13px;color:#991b1b;font-weight:700;">🔴 4 Tickets kritisch (≥90%)</td>
-      <td width="50%" style="padding:4px 0 4px 8px;font-size:13px;color:#92400e;font-weight:700;">🟡 1 Tickets Warnung (70–89%)</td>
+      <td width="50%" style="vertical-align: top; padding-right: 10px;">
+        <div style="color: #9ca3af; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">PROJEKTE</div>
+        <div style="margin-bottom: 6px;"><span style="color: #991b1b; font-size: 13px;">🔴 1 Projekt mit negativem DB</span></div>
+        <div style="margin-bottom: 6px;"><span style="color: #92400e; font-size: 13px;">🟡 2 Projekte brauchen Aufmerksamkeit</span></div>
+        <div style="margin-bottom: 6px;"><span style="color: #991b1b; font-size: 13px;">🏷️ 14 Projekte ohne Buchung >14d</span></div>
+      </td>
+      <td width="50%" style="vertical-align: top; padding-left: 10px;">
+        <div style="color: #9ca3af; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">TICKETS</div>
+        <div style="margin-bottom: 6px;"><span style="color: #991b1b; font-size: 13px;">🔴 7 Zeitkontingent ausgeschöpft</span></div>
+        <div style="margin-bottom: 6px;"><span style="color: #92400e; font-size: 13px;">🟡 2 Zeitkontingent fast ausgeschöpft</span></div>
+        <div style="margin-bottom: 6px;"><span style="color: #991b1b; font-size: 13px;">🏷️ 8 Tickets überfällig</span></div>
+      </td>
     </tr>
   </table>
-  <div style="margin-top:6px;padding-top:8px;border-top:1px solid #e5e7eb;font-size:12px;color:#333333;">
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-      <tr><td style="padding:2px 0;font-size:12px;color:#333333;">3 aktive Projekte</td></tr>
-    </table>
+  
+  <div style="padding-top: 8px; border-top: 1px solid #e5e7eb; font-size: 12px; color: #333333;">
+    29 aktive Projekte · DB II Marge: 58%
   </div>
 </td></tr>
 </table>
