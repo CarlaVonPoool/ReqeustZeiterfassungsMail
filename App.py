@@ -272,21 +272,20 @@ pm_sections = {
     <tr>
       <td width="50%" style="vertical-align: top; padding-right: 10px;">
         <div style="color: #9ca3af; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">PROJEKTE</div>
-        <div style="margin-bottom: 6px;"><span style="color: #991b1b; font-size: 13px;">🔴 1 Projekt mit negativem DB</span></div>
-        <div style="margin-bottom: 6px;"><span style="color: #92400e; font-size: 13px;">🟡 2 Projekte brauchen Aufmerksamkeit</span></div>
-        <div style="margin-bottom: 6px;"><span style="color: #991b1b; font-size: 13px;">🏷️ 14 Projekte ohne Buchung >14d</span></div>
+        <div style="margin-bottom: 6px;"><span style="color: #991b1b; font-size: 13px;">🔴 1 Projekt kritisch</span></div>
+        <div style="margin-bottom: 6px;"><span style="color: #92400e; font-size: 13px;">🟡 2 Projekte im Blick behalten</span></div>
       </td>
       <td width="50%" style="vertical-align: top; padding-left: 10px;">
         <div style="color: #9ca3af; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">TICKETS</div>
-        <div style="margin-bottom: 6px;"><span style="color: #991b1b; font-size: 13px;">🔴 7 Zeitkontingent ausgeschöpft</span></div>
-        <div style="margin-bottom: 6px;"><span style="color: #92400e; font-size: 13px;">🟡 2 Zeitkontingent fast ausgeschöpft</span></div>
-        <div style="margin-bottom: 6px;"><span style="color: #991b1b; font-size: 13px;">🏷️ 8 Tickets überfällig</span></div>
+        <div style="margin-bottom: 6px;"><span style="color: #991b1b; font-size: 13px;">🔴 4 Zeitkontingent kritisch (≥90%)</span></div>
+        <div style="margin-bottom: 6px;"><span style="color: #92400e; font-size: 13px;">🟡 1 Zeitkontingent Warnung (70-89%)</span></div>
+        <div style="margin-bottom: 6px;"><span style="color: #991b1b; font-size: 13px;">🏷️ 3 Tickets überfällig</span></div>
       </td>
     </tr>
   </table>
   
   <div style="padding-top: 8px; border-top: 1px solid #e5e7eb; font-size: 12px; color: #333333;">
-    29 aktive Projekte · DB II Marge: 58%
+    3 aktive Projekte
   </div>
 </td></tr>
 </table>
