@@ -756,8 +756,8 @@ auswahl_zeiterfassung = {}
 auswahl_pm = {}
 
 # Zeiterfassungsmail Sektionen
-st.markdown("### Zeiterfassungs-Mail - Abschnitte auswählen")
-st.markdown("---")
+st.divider()
+st.subheader("Zeiterfassungs-Mail - Abschnitte auswählen")
 
 for titel, html_content in zeiterfassung_sections.items():
     # E-Mail Platzhalter ersetzen für Vorschau
@@ -781,8 +781,8 @@ for titel, html_content in zeiterfassung_sections.items():
         auswahl_zeiterfassung[titel] = st.checkbox("Einschließen", value=True, key=f"zeit_{titel}")
 
 # PM-Mail Sektionen  
-st.markdown("### Projektmanagement-Mail - Abschnitte auswählen")
-st.markdown("---")
+st.divider()
+st.subheader("Projektmanagement-Mail - Abschnitte auswählen")
 
 for titel, html_content in pm_sections.items():
     # E-Mail Platzhalter ersetzen für Vorschau
