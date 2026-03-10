@@ -836,6 +836,14 @@ st.divider()
 st.subheader("Anmerkungen")
 freitext = st.text_area("Hast du noch Wünsche oder Anmerkungen?", height=120, placeholder="z.B. anderer Versandtag, zusätzliche Inhalte, spezielle Anpassungen ...")
 
+st.markdown("""
+<div style="background-color: #fff8e1; border-left: 4px solid #ffc107; padding: 10px; margin: 10px 0;">
+    <p style="font-size: 13px; color: #856404; margin: 0; font-weight: 500;">
+        💡 <strong>Hinweis:</strong> Änderungswünsche außerhalb des Standard-Add-ons werden nach Aufwand berechnet.
+    </p>
+</div>
+""", unsafe_allow_html=True)
+
 st.divider()
 st.subheader("Bestellung")
 
