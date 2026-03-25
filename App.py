@@ -38,7 +38,6 @@ st.divider()
 st.subheader("Welche E-Mails möchtest du aktivieren?")
 
 zeiterfassung_aktiv = st.checkbox("Zeiterfassungs-Mail", value=True)
-pm_aktiv = st.checkbox("Projektmanagement-Mail", value=False)
 
 # Zeiterfassungs-Mail Konfiguration
 if zeiterfassung_aktiv:
@@ -51,6 +50,8 @@ if zeiterfassung_aktiv:
     )
 else:
     berechnungsbasis_option = "Soll-Arbeitszeit (Standard)"
+
+pm_aktiv = st.checkbox("Projektmanagement-Mail", value=False)
 
 # PM-Mail Konfiguration
 if pm_aktiv:
