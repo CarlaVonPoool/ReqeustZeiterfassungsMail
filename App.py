@@ -40,6 +40,18 @@ st.subheader("Welche E-Mails möchtest du aktivieren?")
 zeiterfassung_aktiv = st.checkbox("Zeiterfassungs-Mail", value=True)
 pm_aktiv = st.checkbox("Projektmanagement-Mail", value=False)
 
+# Zeiterfassungs-Mail Konfiguration
+if zeiterfassung_aktiv:
+    st.markdown("**Zeiterfassungs-Mail Konfiguration:**")
+    
+    berechnungsbasis_option = st.selectbox(
+        "Berechnungsbasis Projektzeit",
+        ["Soll-Arbeitszeit (Standard)", "Ist-Arbeitszeit"],
+        index=0
+    )
+else:
+    berechnungsbasis_option = "Soll-Arbeitszeit (Standard)"
+
 # PM-Mail Konfiguration
 if pm_aktiv:
     st.markdown("**Projektmanagement-Mail Konfiguration:**")
@@ -924,6 +936,7 @@ if st.button("kostenpflichtig bestellen", type="primary", disabled=not bestellun
             "beispiel_email": beispiel_email if beispiel_email else "",
             "zeiterfassungsmail_aktiv": "Zeiterfassungs-Mail" in mail_optionen,
             "pm_mail_aktiv": "Projektmanagement-Mail" in mail_optionen,
+            "zeiterfassung_berechnungsbasis": berechnungsbasis_option if zeiterfassung_aktiv else None,
             "pm_stundenkosten_option": stundenkosten_option if pm_aktiv else None,
             "pm_rohertrag_option": rohertrag_option if pm_aktiv else None,
             "kosten": "€ 285 einmaliges Setup (pro Mail-Typ)",
