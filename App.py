@@ -42,6 +42,7 @@ zeiterfassung_aktiv = st.checkbox("Zeiterfassungs-Mail", value=True)
 # Zeiterfassungs-Mail Konfiguration
 if zeiterfassung_aktiv:
     st.markdown("**Zeiterfassungs-Mail Konfiguration:**")
+    st.caption("Diese Einstellung bestimmt, wie Projektzeit-Prozentangaben in der Mail berechnet werden.")
     
     berechnungsbasis_option = st.selectbox(
         "Berechnungsbasis Projektzeit",
@@ -56,6 +57,7 @@ pm_aktiv = st.checkbox("Projektmanagement-Mail", value=False)
 # PM-Mail Konfiguration
 if pm_aktiv:
     st.markdown("**Projektmanagement-Mail Konfiguration:**")
+    st.caption("Diese Einstellungen beeinflussen die Kostendarstellung und Rohertragsberechnung in der Mail.")
     
     col1, col2 = st.columns(2)
     
