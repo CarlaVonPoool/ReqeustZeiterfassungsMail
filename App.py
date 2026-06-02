@@ -15,6 +15,14 @@ st.markdown("""
 
 st.title("Poool Wöchentliche Mails")
 st.markdown("**Zeiterfassung & Projektmanager individuell konfigurieren**")
+
+# Helpcenter Links
+st.info("""
+📚 **Helpcenter Artikel zur Erklärung der Mails:**
+- [Zeiterfasser Reporting-Mail](https://academy.poool.cc/reporting--exporte/c7a8X61MdsUYAGGPFpfasi/zeiterfasser-reporting-mail/7kXnopMmB37uS6z2DPkmng)
+- [Projektmanager Reporting-Mail](https://academy.poool.cc/reporting--exporte/c7a8X61MdsUYAGGPFpfasi/projektmanager-reporting-mail/7kXnopMmB4ce5tjBAv2SUq)
+""")
+
 st.divider()
 
 # ── Unternehmen ──
